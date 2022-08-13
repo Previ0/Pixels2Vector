@@ -144,7 +144,7 @@ void Image::WriteToSVG(std::string filename) {
 	filename = filename.append(".svg");
 	std::ofstream file(filename, std::ios_base::out);
 	if (file.is_open()) {
-		file << "<svg width = \"" << width_ << "\" height = \"" << height_ << "\">" << std::endl;
+		file << "<svg version=\"1.1\" width = \"" << width_ << "\" height = \"" << height_ << "\" xmlns=\"http://www.w3.org/2000/svg\">" << std::endl;
 
 		for (int i = 0; i < width_; ++i) {
 			for (int j = 0; j < height_; ++j) {
