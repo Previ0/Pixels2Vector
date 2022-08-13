@@ -155,7 +155,7 @@ void Image::WriteToSVG(std::string filename) {
 					static_cast<unsigned int>(pixel_array_[i][j].getRed()) << ", " <<
 					static_cast<unsigned int>(pixel_array_[i][j].getGreen()) << ", " <<
 					static_cast<unsigned int>(pixel_array_[i][j].getBlue()) <<
-					");opacity:\"" << (static_cast<unsigned int>(pixel_array_[i][j].getAlpha()) / 255.0) << "\" />\n";
+					");opacity:" << (static_cast<unsigned int>(pixel_array_[i][j].getAlpha()) / 255.0) << "\" />\n";
 			}
 		}
 		file << "</svg>";
